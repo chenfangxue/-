@@ -12,6 +12,24 @@ int main(){
 
 
         printf("请输入所需要的数字\n");
+        int code;
+        scanf("%d",&code);
+        if(code == 1){
+
+        }
+        if(code == 2){
+            
+        }
+        if(code == 3){
+            
+        }
+        if(code == 4){
+            
+        }
+        if(code == 5){
+            printf("退出系统\n");
+            break;
+        }
     }
 
     return 0;

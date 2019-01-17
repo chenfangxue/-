@@ -39,11 +39,11 @@ int main()
         {
             printf("请输入要添加的敏感字符\n");
             char m;
-            scanf("%d", &m);
-            scanf("%d", &m);
+            scanf("%c", &m);
+            scanf("%c", &m);
             arr[index] = m;
             index++;
-            printf("\n");
+            printf("添加成功，点回车继续\n");
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
@@ -57,7 +57,7 @@ int main()
             }
             else
             {
-                printf("删除成功，点击回车继续\n");
+                printf("删除失败，点击回车继续\n");
             }
             char x;
             scanf("%d", &x);
@@ -66,18 +66,19 @@ int main()
         if (code == 3)
         {
             printf("敏感词如下\n");
-            for (int i = 0; index > 0; i++)
+            for (int i = 0; i < index; i++)
             {
-                printf("第%n个敏感字符为%c\n");
+                printf("第%d个敏感字符为%c\n", i + 1, arr[i]);
             }
             printf("点击回车继续\n");
             char x;
-            scanf("%d",&x);
-            scanf("%d",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
             printf("请输入一段英文\n");
+
         }
         if (code == 5)
         {

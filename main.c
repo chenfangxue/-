@@ -6,12 +6,12 @@ int ismingan(char x)
     int count = 0;
     for (int i = 0; i < index; i++)
     {
-        if (x = arr[i])
+        if (x == arr[i])
         {
             count++;
         }
     }
-    if (count = 0)
+    if (count == 0)
     {
         return 0;
     }
@@ -78,7 +78,27 @@ int main()
         if (code == 4)
         {
             printf("请输入一段英文\n");
+            char yingwen[1024];
+            scanf("%s", yingwen);
+            for (int i = 0; 1; i++)
 
+            {
+                if (yingwen[i] == '\0')
+
+                {
+                    break;
+                }
+                if(ismingan(yingwen[i]) == 1)
+                {
+                    yingwen[i]='*';
+                }
+                printf("%c",yingwen[i]);
+            }
+            printf("\n");
+            printf("替换成功，点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {

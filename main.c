@@ -55,16 +55,25 @@ int main()
                 index--;
                 printf("删除成功，点击回车继续\n");
             }
-            else{
+            else
+            {
                 printf("删除成功，点击回车继续\n");
             }
             char x;
-            scanf("%d",&x);
-            scanf("%d",&x);
+            scanf("%d", &x);
+            scanf("%d", &x);
         }
         if (code == 3)
         {
             printf("敏感词如下\n");
+            for (int i = 0; index > 0; i++)
+            {
+                printf("第%n个敏感字符为%c\n");
+            }
+            printf("点击回车继续\n");
+            char x;
+            scanf("%d",&x);
+            scanf("%d",&x);
         }
         if (code == 4)
         {
